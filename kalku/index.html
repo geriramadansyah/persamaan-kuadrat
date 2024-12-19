@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Persamaan Kuadrat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="index.html">Kalkulator</a></li>
+            <li>
+                <img class="image" src="img.jpg">
+                <div class="banner-text" id="bannerText">Geri Ramadansyah</div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Kalkulator Persamaan Kuadrat</h1>
+        <label for="persamaan">Pilih Persamaan:</label>
+        <select id="persamaan">
+            <option value="ax2bx">ax² + bx + c = n</option>
+            <option value="ax2bx_c">ax² + bx - c = n</option>
+            <option value="ax2_bx">ax² - bx + c = n</option>
+            <option value="le">ax² + bx + c ≤ n</option>
+            <option value="ge">ax² + bx + c ≥ n</option>
+            <option value="x2_n">x² – nx > n</option>
+            <option value="x2_n2">x² – n > n</option>
+        </select>
+
+        <div class="input-group">
+            <label for="a">Masukkan nilai a:</label>
+            <input type="number" id="a" placeholder="Contoh: 2" />
+        </div>
+        <div class="input-group">
+            <label for="b">Masukkan nilai b:</label>
+            <input type="number" id="b" placeholder="Contoh: 3" />
+        </div>
+        <div class="input-group">
+            <label for="c">Masukkan nilai c:</label>
+            <input type="number" id="c" placeholder="Contoh: 1" />
+        </div>
+        <div class="input-group">
+            <label for="n">Masukkan nilai n:</label>
+            <input type="number" id="n" placeholder="Contoh: 5" />
+        </div>
+        <button onclick="hitung()">Hitung</button>
+
+        <div id="hasil"></div>
+    </div>
+
+    <footer>
+        <p>&copy;geriramadansyah 2024 Kalkulator Kuadrat. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
